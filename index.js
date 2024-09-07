@@ -8,10 +8,10 @@ fetch('https://jsonplaceholder.typicode.com/users')
             let divUsers = (document.createElement('div'));
             divUsers.classList.add('user');
             let id = document.createElement('p');
-            id.classList.add('p');
+            id.classList.add('id');
             id.innerText = `ID: ${user.id}`;
             let name = document.createElement('p');
-            name.classList.add('p');
+            name.classList.add('name');
             name.innerText = `Name: ${user.name}`;
             let button = document.createElement('button');
             button.innerText = 'Details';
