@@ -82,5 +82,8 @@ fetch('https://jsonplaceholder.typicode.com/users/' + userid)
                     })
                 flag = true;
             }
+            bodyDiv.scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     })
