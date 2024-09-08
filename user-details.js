@@ -4,26 +4,29 @@ fetch('https://jsonplaceholder.typicode.com/users/' + userid)
     .then(user => {
         console.log(user);
         let divBody = document.createElement('div');
-        divBody.classList.add('body');
+        divBody.classList.add('divBody');
         document.body.appendChild(divBody);
+        let divUserID = document.createElement('div');
+        divUserID.classList.add('divUserID');
         let name = document.createElement('h1');
         name.innerText = `Name - ${user.name}`;
         name.classList.add('name');
         let id = document.createElement('p');
         id.innerText = `ID: ${user.id}`;
         id.classList.add('id');
+        divUserID.append(name, id);
         let divInfo = document.createElement('div');
         divInfo.classList.add('divInfo');
         let userName = document.createElement('p');
         userName.innerText = `Username: ${user.username}
             Email: ${user.email}
             Phone: ${user.phone}`
-        divInfo.append(userName);
+        divInfo.appendChild(userName);
         let divAddress = document.createElement('div');
         divAddress.classList.add('divAddress');
         let h2Address = document.createElement('h2');
         h2Address.innerText = 'Address';
-        h2Address.classList.add('Address');
+        h2Address.classList.add('h2Address');
         let pAddress = document.createElement('p');
         let address = user.address;
         pAddress.innerText = `Street: ${address.street}
@@ -43,7 +46,7 @@ fetch('https://jsonplaceholder.typicode.com/users/' + userid)
             Use: ${company.catchPhrase}
             Product: ${company.bs}`
         divCompany.append(h2Company, pCompany);
-        divBody.append(name, id, divInfo, divAddress, divCompany);
+        divBody.append(divUserID, divInfo, divAddress, divCompany);
         let divButton = document.createElement('div');
         document.body.appendChild(divButton);
         divButton.classList.add('divButton');

@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.divUserID{
+    width: 100%;
+    height: 130px;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.name{
+    text-align: center;
+    font-size: 50px;
+}
+.id{
+    margin-top: 25px;
+    font-size: 30px;
+    text-align: center;
+}
+.divInfo{
+    width: 100%;
+    height: 130px;
+    margin-top: 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.divInfo>p{
+    margin-top: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+.divAddress{
+    width: 100%;
+    height: 230px;
+    margin-top: 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.h2Address{
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.divAddress>p{
+    margin-top: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+.divCompany{
+    width: 100%;
+    height: 170px;
+    margin-top: 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.h2Company{
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.divCompany>p{
+    margin-top: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.divButton{
+    width: 100vw;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    margin-top: 100px;
+    background-color: red;
+    width: 30vw;
+    height: 10vh;
+    border-radius: 10px;
+    font-size: 2vh;
+    color: white;
+}
+button:hover{
+    background-color: blue;
+    transition: 0.5s;
+}
+.bodyDiv{
+    margin-top: 100px;
+    width: 100vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    grid-gap: 2px;
+
+}
+.divPosts{
+    width: 100%;
+    height: 130px;
+    border: 5px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.divPosts>p{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.divPosts>a{
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: red;
+    color: white;
+}
