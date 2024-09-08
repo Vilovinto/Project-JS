@@ -50,15 +50,20 @@ fetch('https://jsonplaceholder.typicode.com/users/' + userid)
         let divButton = document.createElement('div');
         document.body.appendChild(divButton);
         divButton.classList.add('divButton');
-        let button = document.createElement('button');
-        button.innerText = 'Post of current user';
-        divButton.appendChild(button);
+        let button1 = document.createElement('button');
+        button1.innerText = 'Post of current user';
+        let button2 = document.createElement('button');
+        button2.innerText = 'Return to start';
+        button2.addEventListener('click', () => {
+            location.href = 'index.html';
+        })
+        divButton.append(button1, button2);
         let bodyDiv = document.createElement('div');
         bodyDiv.classList.add('bodyDiv');
         document.body.appendChild(bodyDiv);
         let urlPost = new URL(location.href).searchParams.get('id');
         let flag = false;
-        button.addEventListener('click', () => {
+        button1.addEventListener('click', () => {
             if (!flag) {
                 fetch(`https://jsonplaceholder.typicode.com/users/${urlPost}/posts`)
                     .then(value => value.json())

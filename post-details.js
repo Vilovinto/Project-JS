@@ -29,5 +29,18 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${urlPost}`)
                     divComments.appendChild(divName);
                 }
             })
-        divBody.append(divID, divComments);
+        let divButton = document.createElement('div');
+        divButton.classList.add('divButton');
+        let button1 = document.createElement('button');
+        button1.innerText = 'Return to start';
+        button1.addEventListener('click', () => {
+            location.href = 'index.html';
+        })
+        let button2 = document.createElement('button');
+        button2.innerText = 'Return the previous page';
+        button2.addEventListener('click', () => {
+            location.href = 'user-details.html?id=' + post.userId;
+        })
+        divButton.append(button1, button2);
+        divBody.append(divID, divComments, divButton);
     })

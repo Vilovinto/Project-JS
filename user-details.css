@@ -74,6 +74,14 @@
     justify-content: center;
     align-items: center;
 }
+.divButton{
+    width: 100%;
+    height: 10vh;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 button{
     margin-top: 100px;
     background-color: red;
@@ -101,7 +109,7 @@ button:hover{
     width: 100%;
     height: 130px;
     border: 5px solid black;
-    border-radius: 10px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,6 +122,8 @@ button:hover{
 }
 .divPosts>a{
     margin-top: 15px;
+    width: 300px;
+    border-radius: 30px;
     text-align: center;
     text-decoration: none;
     font-size: 30px;
